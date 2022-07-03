@@ -1,0 +1,21 @@
+
+
+
+.privateIcone{
+  position: relative;
+  padding: 1px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  & i{
+    color :white ;
+    font-size: 36px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .PrivateHeader {
+    display: none;
+  }
+}

@@ -1,0 +1,61 @@
+@import "../varibles";
+
+
+.newPrice {
+  position: relative;
+  &:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #9099A3;
+    top: 50%;
+  }
+}
+.ClubPackage.hover{
+  transition: 0.3s;
+  &:hover {
+    border-radius: 0 0 15px 15px;
+
+  }
+  &:hover:before{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  &.hover &_btn:hover{
+    background: $mainColor;
+  }
+  &:before{
+    z-index: -1;
+    transition: 0.3s;
+    transform:translateY(60px  );
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 14px;
+    content: "Рекомендуем";
+    width: 100%;
+    height: 15%;
+    background: $mainColor;
+    top: -10%;
+    left: 0;
+    border-radius: 15px 15px 0 0 ;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

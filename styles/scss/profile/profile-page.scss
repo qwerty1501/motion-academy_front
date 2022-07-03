@@ -1,0 +1,61 @@
+.EntryInputP{
+  width: 80%;
+  border-radius: 15px;
+  padding: 20px 10px;
+  color:#9099A3;
+  font-size: 18px;
+  font-weight: 200;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+.EntryPasswordP{
+  font-weight: 200;
+  font-size: 18px;
+  color:#9099A3;
+  border-bottom: 1px solid #9099A3 ;
+}
+
+
+
+
+.EntryInputPasswordEyesP{
+  position: absolute;
+  right: 22%;
+  margin-top: 23px;
+}
+.eyeP{
+  width: 20px;
+  height: 10px;
+  cursor: pointer;
+}
+
+
+.PrivateModal{
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+
+
+  .PrivateModal{
+    display: block;
+  }
+  .PaymentCardsPageImg{
+    width: 14%;
+  }
+}
+@media (max-width: 414px) {
+
+  .PrivateHeader{
+    display: none;
+  }
+  .PrivateModal{
+    display: block;
+  }
+  .PaymentCardsPageImg{
+    width: 8%;
+  }
+}

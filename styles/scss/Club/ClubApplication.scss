@@ -1,0 +1,34 @@
+
+
+.PhoneInputCountryIcon{
+  width: 30px !important;
+  top: 10px;
+  background: transparent;
+
+}
+.PhoneInput{
+  position: relative;
+  background: #464951;
+  width: 100%;
+  border-radius: 15px;
+  padding: 14px 17px;
+  display: flex;
+}
+.PhoneInputCountry{
+  flex-direction: row-reverse;
+  display: flex;
+  background: transparent;
+  left: 0;
+  top: 0;
+}
+.PhoneInputCountrySelect{
+  width: 20px;
+  background: transparent;
+}
+.PhoneInputInput{
+  outline: none;
+  padding: 3px 10px;
+  color: #FFFFFF;
+  background:transparent ;
+  width: 100%;
+}

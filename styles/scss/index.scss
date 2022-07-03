@@ -1,0 +1,637 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import "varibles";
+@import 'hero';
+@import "header";
+@import "article";
+@import "FAQ/faq";
+@import 'FAQ/Accordion';
+@import "Form";
+@import "footer";
+@import "programCard";
+
+@import "master-class/master-clas";
+@import "./Club/ClubApplication";
+@import "./Club/ClubFormats";
+@import "./Club/ClubMision";
+@import "./Club/ClubProcess";
+
+@import "course/course";
+
+;
+@import "BusinessPage";
+
+@import "../icons.css";
+
+@import "profile/profile-header";
+@import "profile/profile-page";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.PhoneInputCountryIcon {
+  margin-top: 7%;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+%btn {
+  padding: 7px 18px;
+  background: #FF1A1A;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  display: flex;
+  border-radius: 10px;
+  transition: 0.3s;
+  margin: 10px 0;
+
+  &:hover {
+    box-shadow: 0 8px 10px rgb(255, 26, 26);
+    transform: translateY(-10px);
+  }
+}
+
+
+%btn3 {
+  padding: 7px 18px;
+  background: $mainColor;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  border-radius: 10px;
+  transition: 0.3s;
+  margin: 10px 0;
+
+  &:hover {
+    box-shadow: 0 8px 10px rgb(255, 26, 26);
+    transform: translateY(-10px);
+  }
+}
+
+.ClubPackage_btn {
+  transition: 0.3s;
+}
+
+.ClubPackage_btn:hover {
+  box-shadow: 0 8px 10px rgba(23, 41, 86, 0.54);
+  transform: translateY(-10px);
+}
+
+%btn2 {
+  margin: 10px 0;
+  padding: 7px 18px;
+  border: 1px #9099A3 solid;
+  color: #9099A3;
+  font-weight: bold;
+  font-size: 15px;
+  display: flex;
+  border-radius: 10px;
+  transition: 0.3s;
+
+  &:hover {
+    color: #eeeeee;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 8px 20px rgba(26, 92, 255, 0.2));
+    background: transparent;
+  }
+}
+
+//.course-img {
+//  width: 200px;
+//  height: 280px;
+//  object-fit: fill;
+//}
+.btn {
+  @extend %btn;
+  padding: 8px 30px;
+  background: #FF1A1A;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  border-radius: 10px;
+  transition: 0.3s;
+  margin: 20px 0;
+}
+
+.masterImg {
+  object-fit: cover;
+}
+
+.course-btn {
+  @extend %btn;
+  width: 180px;
+  height: 40px;
+}
+
+.btn3 {
+  @extend %btn3;
+}
+
+.modal-btn {
+  font-size: 24px;
+  padding: 5px 30px;
+  margin-top: 30px;
+  @extend %btn
+}
+
+.subscribe-btn {
+  font-size: 20px;
+  padding: 10px 92px;
+  @extend %btn
+}
+
+.burger-M {
+  display: none;
+}
+
+.masterClassBtn {
+  @extend %btn;
+}
+
+.btn2 {
+  @extend %btn2;
+}
+
+.closeItem {
+  @extend %btn2;
+  margin-left: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: #1E2024;
+
+
+}
+
+ul li {
+  list-style: none;
+}
+
+
+#radios {
+  position: relative;
+  margin-left: 0;
+}
+
+.input[type="radio"] {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #2f2f2f;
+}
+
+#input1:checked ~ #slider {
+  animation-name: input1;
+}
+
+#input2:checked ~ #slider {
+  animation-name: input2;
+}
+
+.tripHero {
+  min-height: 100vh;
+}
+
+
+@keyframes input1 {
+  30%, 70% {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes input2 {
+  30%, 70% {
+    transform: scale(0.5);
+  }
+}
+
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background: $mainColor;
+}
+
+.container {
+  width: 1140px !important;
+  margin: 0 auto;
+}
+
+#hero {
+  min-height: 60vh;
+
+  &:before {
+    object-fit: cover;
+    position: absolute;
+    content: '';
+    background: url("../../assets/img/heroImg.png") no-repeat center/cover !important;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+
+  .hero_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+}
+
+
+@media (min-width: 1300px) {
+  .container {
+    width: 1200px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 92% !important;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+
+}
+
+#MyPurchasesHeroMd {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .course__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .DontworkingAsk_block {
+    display: none;
+  }
+  .course-img {
+    object-fit: scale-down;
+    height: 270px;
+  }
+  .burger-M {
+    display: block;
+  }
+  .webinar-card {
+    display: flex;
+    flex-direction: column-reverse;
+
+
+  }
+  .TeamBuildingHeroLight {
+    display: none;
+  }
+  .container {
+    width: 92% !important;
+  }
+  .tripHero {
+    min-height: 150vh;
+  }
+
+  .col-span-4 {
+    grid-column: span 6 / span 6 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #MyPurchasesHero {
+    display: none;
+  }
+  #kaizen-school {
+    min-height: 70vh;
+  }
+  #MyPurchasesHeroMd {
+    display: block;
+  }
+  //.DontworkingMaster_block {
+  //  display: none;
+  //}
+  .container {
+    width: 92% !important;
+  }
+  #hero {
+    min-height: 60vh;
+
+    .hero_img {
+      display: none;
+    }
+
+    position: relative;
+
+    &:before {
+      object-fit: contain;
+      position: absolute;
+      content: '';
+      background: url("../../assets/img/herobg.jpg") no-repeat center/cover !important;
+      width: 80%;
+      margin: auto;
+      left: 0;
+      right: 0;
+      min-height: 100vh;
+      display: block;
+      z-index: -2;
+      bottom: 0;
+    }
+
+    &:after {
+      bottom: 0%;
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 120%;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(15px);
+      z-index: -1;
+    }
+  }
+  .TeamCurseMaster {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #ClubHero {
+    min-height: 50vh;
+
+    .ClubHero_img {
+      display: none;
+    }
+
+    &:before {
+      object-fit: cover;
+      position: absolute;
+      content: '';
+      background: url("../../assets/img/bigLogo.png") no-repeat center/100% !important;
+      width: 100%;
+      margin-left: 2%;
+      top: 0;
+      height: 80%;
+      display: block;
+      z-index: -2;
+      bottom: 0;
+    }
+
+    &:after {
+      bottom: -15%;
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: -1;
+    }
+  }
+  .title_hero {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 36px;
+
+  }
+
+  .hero_tit {
+    text-align: center;
+    margin-top: 120px;
+
+    .upTitle {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      line-height: 24px;
+      padding: 12px 30px;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border: 1px solid $mainColor;
+      letter-spacing: 1px;
+      border-radius: 10px;
+      transition: 0.3s;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  #hero:before {
+    width: 95%;
+    left: 5%;
+  }
+  #master-class {
+    .hero_tit {
+      .masterClassBtn {
+        padding: 10px 10px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  #kaizen-school:before {
+    width: 65%;
+    left: 15%;
+  }
+  #hero {
+    min-height: 67vh;
+
+
+  }
+
+  #ClubHero:before {
+    width: 65%;
+    left: 15%;
+  }
+
+}
+
+@media (max-width: 414px) {
+  .container {
+    width: 92% !important;
+  }
+
+
+  #kaizen-school {
+    min-height: 100vh;
+  }
+  #ClubHero {
+    min-height: 70vh;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 92% !important;
+  }
+  #hero:before {
+    width: 95%;
+    left: 5%;
+  }
+  #hero:after {
+    height: 100%;
+  }
+}
+
+//@media (max-width: 425px) {
+//  body {
+//    width: 227% !important;
+//  }
+//  .EntryInputPasswordEyesP {
+//    right: -68%;
+//  }
+//  #hero {
+//    min-height: 100vh;
+//
+//    &:before {
+//      left: 60%;
+//      object-fit: cover;
+//      position: absolute;
+//      content: '';
+//      background: url("../../assets/img/heroImg.png") no-repeat center/cover !important;
+//      width: 100%;
+//      height: 90%;
+//      display: block;
+//      z-index: -2;
+//      bottom: 0;
+//    }
+//
+//    &:after {
+//      position: absolute;
+//      content: '';
+//      width: 227%;
+//      bottom: 0;
+//      height: 50%;
+//      backdrop-filter: blur(14px);
+//      -webkit-backdrop-filter: blur(14px);
+//      z-index: -1;
+//    }
+//  }
+//}
+//
+//@media (max-width: 414px) {
+//  .grid-cols-3 {
+//    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+//  }
+//  .grid-cols-2 {
+//    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+//  }
+//  .grid-cols-2 {
+//    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+//  }
+//  .grid-cols-4 {
+//    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+//  }
+//  body {
+//    width: 246% !important;
+//  }
+//  #hero {
+//    &:after {
+//      width: 246%;
+//    }
+//
+//    &:before {
+//      width: 80%;
+//      height: 100%;
+//      left: 100%;
+//    }
+//  }
+//}
+//
+//@media (max-width: 375px) {
+//  body {
+//    width: 271% !important;
+//  }
+//  .EntryInputPasswordEyesP {
+//    right: -100%;
+//  }
+//  #hero {
+//    &:after {
+//      width: 271%;
+//    }
+//
+//    &:before {
+//      width: 100%;
+//      height: 100%;
+//      left: 100%;
+//    }
+//  }
+//}
+//
+//@media (max-width: 320px) {
+//  body {
+//    width: 318% !important;
+//  }
+//  #hero {
+//    &:after {
+//      width: 318%;
+//    }
+//
+//    &:before {
+//      width: 130%;
+//      height: 100%;
+//      left: 100%;
+//    }
+//  }
+//}
+
+//#__next{
+//  width: 100%;
+//}
+
+//@media (max-width: 992px) {
+//  #__next{
+//    width: 125%;
+//  }
+//}
+//
+//@media (max-width: 768px) {
+//  #__next{
+//    width: 130%;
+//  }
+//
+//}
+//
+//@media (max-width: 576px) {
+//  #__next{
+//    width: 165%;
+//  }
+//
+//}
+//
+//
+//@media (max-width: 414px) {
+//  #__next{
+//    width: 245%;
+//  }
+//
+//}
+//@media (max-width: 425px) {
+//  #__next{
+//    width: 245%;
+//  }
+//
+//}
+//@media (max-width: 375px) {
+//  #__next{
+//    width: 275%;
+//  }
+//}
+//@media (max-width: 320px) {
+//  #__next{
+//    width: 315%;
+//  }
+//}

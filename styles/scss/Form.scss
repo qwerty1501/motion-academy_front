@@ -1,0 +1,60 @@
+@import "varibles";
+.kaizen-form {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  background: #464951;
+  width: 95%;
+  outline: none;
+  padding: 20px 10px;
+}
+.react-tel-input {
+  margin-bottom: 24px;
+}
+.react-tel-input .form-control {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 15px !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  width: 616px !important;
+  height: 60px !important;
+  font-size: 16px !important;
+  margin-bottom: 14px !important;
+
+}
+.PhoneInputCountrySelect{
+  font-size: 0 !important;
+}
+.testimonials-card {
+  background:#1E2023;
+  border-radius: 15px;
+  padding: 10px 20px;
+  border: 1px solid red;
+
+}
+.testtimone{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.testimonials-card:hover {
+  background: $mainColor;
+  transition: 0.7s;
+  box-shadow: 0 10px 30px -5px rgba(var(--vs-primary),.4);
+  transform: translateY(-10px);
+  border: none;
+
+}
+
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 414px) {
+  .testimonials-card{
+    width: 80%;
+  }
+  .react-tel-input .form-control{
+    width: 100% !important;
+  }
+
+}
